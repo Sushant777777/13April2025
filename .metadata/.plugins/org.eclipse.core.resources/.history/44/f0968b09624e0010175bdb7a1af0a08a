@@ -1,0 +1,8 @@
+package com.google.recursion.basic;
+
+public class Basic {
+	public static void main(String[] args) {
+		int x = 0;
+		int result = recursion(x);
+	}
+}

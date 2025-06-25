@@ -1,0 +1,8 @@
+package com.google.recursion.basic;
+
+public class Functional {
+	public static void main(String[] args) {
+		int n = 3;
+
+	}
+}

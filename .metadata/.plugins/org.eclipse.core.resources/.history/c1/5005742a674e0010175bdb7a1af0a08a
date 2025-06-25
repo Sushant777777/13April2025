@@ -1,0 +1,15 @@
+package com.google.recursion.basic;
+
+public class Functional {
+	public static void main(String[] args) {
+		int n = 3;
+		fun(3);
+	}
+
+	public static void fun(int n) {
+
+		if (n == 0) {
+			return;
+		}
+	}
+}

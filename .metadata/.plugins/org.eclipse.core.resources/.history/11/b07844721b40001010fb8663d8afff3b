@@ -1,0 +1,17 @@
+package com.google.graph.revision;
+
+public class DirectedCycle {
+	static class Edge {
+		int src;
+		int det;
+		// int wt;
+
+		public Edge(int src, int det) {
+			super();
+			this.src = src;
+			this.det = det;
+			// this.wt = wt;
+		}
+
+	}
+}

@@ -1,0 +1,10 @@
+package com.google.recursion.basic;
+
+public class Parameterised {
+	public static void main(String[] args) {
+		int sum = 0;
+		int n = 4;
+
+		fun(n, sum);
+	}
+}

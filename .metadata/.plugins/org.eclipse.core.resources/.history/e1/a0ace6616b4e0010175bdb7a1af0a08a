@@ -1,0 +1,15 @@
+package com.google.recursion.basic;
+
+public class Recursion {
+	public static void main(String[] args) {
+		int n = 6;
+		recursion(6);
+	}
+
+	private static int recursion(int i) {
+		if (i <= 0) {
+			return i;
+		}
+
+	}
+}

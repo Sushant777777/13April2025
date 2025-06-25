@@ -1,0 +1,17 @@
+package com.google.graph.last.revision.part.two;
+
+public class PrimsAlgo {
+	static class Edge {
+		int src;
+		int det;
+		int wt;
+
+		public Edge(int src, int det, int wt) {
+			super();
+			this.src = src;
+			this.det = det;
+			this.wt = wt;
+		}
+
+	}
+}

@@ -1,0 +1,8 @@
+package com.google.dynamic.programming.basic;
+
+public class FabaoniciSeries {
+	public static void main(String[] args) {
+		int n = 5;
+		fab(n);
+	}
+}

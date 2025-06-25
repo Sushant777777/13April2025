@@ -1,0 +1,24 @@
+package com.google.mediam;
+
+public class LeetCode80 {
+	public static void main(String[] args) {
+		int nums[] = { 0, 0, 1, 1, 1, 1, 2, 3, 3 };
+		int result = removeDuplicates(nums);
+		System.out.println(result);
+	}
+
+	public static int removeDuplicates(int[] nums) {
+
+		int counter = 0;
+		for (int i = 1; i < nums.length; i++) {
+			if (nums[i] != nums[i - 1]) {
+
+			} else {
+				counter++;
+				if(counter<=1)
+			}
+		}
+		return 0;
+
+	}
+}

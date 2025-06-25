@@ -1,0 +1,13 @@
+package com.google.recursion.basic;
+
+public class Recursion {
+	public static void main(String[] args) {
+		int n = 6;
+		recursion(6);
+	}
+
+	private static void recursion(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+}

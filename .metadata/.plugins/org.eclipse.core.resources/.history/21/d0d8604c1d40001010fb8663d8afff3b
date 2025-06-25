@@ -1,0 +1,59 @@
+package com.google.graph.revision;
+
+import java.util.ArrayList;
+
+import com.google.graph.revision.UndirectedCycle.Edge;
+
+public class DirectedCycle {
+	static class Edge {
+		int src;
+		int det;
+
+		public Edge(int src, int det) {
+			super();
+			this.src = src;
+			this.det = det;
+		}
+
+	}
+
+	public static void createGraph(ArrayList<Edge> graph[]) {
+		for (int i = 0; i < graph.length; i++) {
+			graph[i] = new ArrayList<Edge>();
+		}
+
+		graph[0].add(new Edge(0, 2));
+
+		graph[1].add(new Edge(1, 0));
+
+		graph[2].add(new Edge(2, 3));
+
+		graph[3].add(new Edge(3, 0));
+
+	}
+
+	public static boolean directedCycle(ArrayList<Edge> graph[], boolean visited[], boolean rec[], int current) {
+		visited[current] = true;
+		rec[current] = true;
+
+		for (int i = 0; i < graph[current].size(); i++) {
+			Edge edge = graph[current].get(i);
+
+			if (rec[edge.det] == true) {
+				return true;
+			} else if (!visited[edge.det]) {
+				directedCycle(graph, visited, rec, edge.det);
+			}
+		}
+		rec[current] = false;
+		return false;
+	}
+
+	public static void main(String[] args) {
+		ArrayList<Edge> graph[] = new ArrayList[7];
+		boolean visited[] = new boolean[7];
+		boolean rec[] = new boolean[7];
+		createGraph(graph);
+		System.out.println(directedCycle(graph, visited, rec, 0));
+	}
+}

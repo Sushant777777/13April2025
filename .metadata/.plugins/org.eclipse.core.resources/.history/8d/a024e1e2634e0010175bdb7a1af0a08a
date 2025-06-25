@@ -1,0 +1,8 @@
+package com.google.recursion.basic;
+
+public class ReverseNo {
+	public static void main(String[] args) {
+		int x = 5;
+		int n = 0;
+	}
+}

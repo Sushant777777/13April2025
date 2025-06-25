@@ -1,0 +1,18 @@
+package com.google.graph.revision;
+
+public class AllPathSourceToTarget {
+
+	static class Edge {
+		int src;
+		int det;
+		// int wt;
+
+		public Edge(int src, int det) {
+			super();
+			this.src = src;
+			this.det = det;
+			// this.wt = wt;
+		}
+
+	}
+}

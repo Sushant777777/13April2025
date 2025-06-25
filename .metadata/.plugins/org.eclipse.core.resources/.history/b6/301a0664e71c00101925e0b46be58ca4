@@ -1,0 +1,14 @@
+package com.google.mediam;
+
+public class LeetCode122 {
+	public static void main(String[] args) {
+		int arr[] = { 7, 1, 5, 3, 6, 4 };
+		int result = maxProfit(arr);
+		System.out.println(result);
+	}
+
+	public static int maxProfit(int[] prices) {
+
+		return 0;
+	}
+}

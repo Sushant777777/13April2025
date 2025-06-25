@@ -1,0 +1,35 @@
+package com.google.graph.last.revision.part.two;
+
+public class PrimsAlgo {
+	static class Edge {
+		int src;
+		int det;
+		int wt;
+
+		public Edge(int src, int det, int wt) {
+			super();
+			this.src = src;
+			this.det = det;
+			this.wt = wt;
+		}
+
+	}
+
+	static class Pair implements Comparable<Pair> {
+		int node;
+		int dist;
+
+		public Pair(int node, int dist) {
+			super();
+			this.node = node;
+			this.dist = dist;
+		}
+
+		@Override
+		public int compareTo(Pair o) {
+			// TODO Auto-generated method stub
+			return this.dist - o.dist;
+		}
+
+	}
+}

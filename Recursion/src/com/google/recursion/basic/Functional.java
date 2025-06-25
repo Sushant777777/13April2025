@@ -1,0 +1,18 @@
+package com.google.recursion.basic;
+
+public class Functional {
+	public static void main(String[] args) {
+		int n = 3;
+		int fun = fun(n);
+		System.out.println(fun);
+	}
+
+	public static int fun(int n) {
+
+		if (n == 0) {
+			return 0;
+		}
+
+		return n + fun(n - 1);
+	}
+}
